@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: green; */
+}
+
+.card {
+    width: 170px;
+    height: 180px;
+    border-radius: 7px;
+    position: relative;
+    padding: 0;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    /* border: 2px solid #c3c6ce; */
+    /* background: url(https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5); */
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: none;
+    background-color: #1ed760;
+    box-shadow: 2px 2px 2px #eeeeee3a;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 12px;
+    position: absolute;
+    left: 82%;
+    bottom: 31px;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+/*Hover*/
+.card:hover {
+    z-index: 1;
+    backdrop-filter: blur(190px);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    /* border-color: #008bf8; */
+    /* background-color: black; */
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
